@@ -10,9 +10,17 @@ table {
     width: 50%;
     margin-left: 15px;
     border-collapse: collapse;
+    margin-top: 20px
 
 }
 
+
+
 #add_book {
     margin: 15px;
+}
+
+input {
+    display: block;
+
 }

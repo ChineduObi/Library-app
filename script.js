@@ -1,16 +1,14 @@
 const myLibrary = [];
 
-document.querySelector("#add_book").addEventListener("click", addBookToLibrary);
-
 
 function Book() {
 
 }
 
 function addBookToLibrary() {
-    var name = prompt("Please Enter the name of the book: ");
-    var author = prompt("Please Enter the author of the book: ");
-    var pages = prompt("Please enter the number of pages of the book: ");
+    var name = document.getElementById("name").value;
+    var author = document.getElementById("author").value;
+    var pages = document.getElementById("pages").value;
 
     const book = [];
     book.push(name);
@@ -18,14 +16,31 @@ function addBookToLibrary() {
     book.push(pages);
     displayBooks(book);
     myLibrary.push(book);
-
-
 }
 
 function displayBooks(array) {
-    for (let i=0; i < array.length; i++){
-        document.getElementById('first').innerHTML = array[0];
-        document.getElementById('second').innerHTML = array[1];
-        document.getElementById('third').innerHTML = array[2];
-    }
+    
+        // Get the table body element in which you want to add row
+        let table = document.getElementById("tableBody");
+    
+        // Create row element
+        let row = document.createElement("tr")
+        
+        for (let i=0; i < array.length; i++){
+            // Create cells
+            let c1 = document.createElement("td")
+            
+            // Insert data to cells
+            c1.innerText = array[i]
+
+            // Append cells to row
+            row.appendChild(c1);
+        }
+        // Append row to table body
+        table.appendChild(row)
 }
+
+
+
+
+
