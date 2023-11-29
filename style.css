@@ -1,0 +1,18 @@
+th, td, tr {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+
+} 
+
+table {
+    font-family: arial;
+    width: 50%;
+    margin-left: 15px;
+    border-collapse: collapse;
+
+}
+
+#add_book {
+    margin: 15px;
+}
