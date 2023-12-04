@@ -1,20 +1,53 @@
+html {
+    background-color: #FA292A;
+}
+
+header {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    font-size: 4rem;
+}
+
+#add_book {
+    background-color: #486860;
+}
+
 th, td, tr {
-    border: 1px solid black;
     text-align: left;
     padding: 8px;
 
 } 
+
+th {
+    background-color: burlywood;
+    border: 1px solid burlywood
+}
+
+tr:nth-child(even) {
+    background: beige;
+  }
+
+tr:nth-child(Odd) {
+    background: beige;
+  }
+
 
 table {
     font-family: arial;
     width: 50%;
     margin-left: 15px;
     border-collapse: collapse;
-    margin-top: 20px
+    margin-top: 20px;
+  ;
 
 }
 
-
+form {
+    margin-left: 10px;
+}
 
 #add_book {
     margin: 15px;

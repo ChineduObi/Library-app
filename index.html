@@ -5,21 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
     
   </head>
 <body>
+  <header id="header">Library APP</header>
+  <dialog>
+    <button autofocus>Close</button>
+    <form action="" id="form">
+      <label for="name">Book Name:</label><br>
+      <input type="text" id="name" name="name" required>
+      <label for="author">Author:</label><br>
+      <input type="text" id="author" name="author" required>
+      <label for="pages">Pages:</label><br>
+      <input type="text" id="pages" name="pages" required><br>
+      <button type="submit" id = 'submit'>Add Book</button>
+    </form>
+  </dialog>
 
-  <button id="add_book" onclick="showForm()">New book</button>
+
+  <button id="add_book">New book</button>
   <!-- <button id="operators">Delete</button> -->
-  <form action="" id="form">
-    <label for="name">Book Name:</label><br>
-    <input type="text" id="name" name="name" required>
-    <label for="author">Author:</label><br>
-    <input type="text" id="author" name="author" required>
-    <label for="pages">Pages:</label><br>
-    <input type="text" id="pages" name="pages" required><br>
-    <input type="submit" value="Submit" id = "submit" onclick="addBookToLibrary()">
-  </form>
+  
   <table>
     <tr>
       <th>Name</th>
